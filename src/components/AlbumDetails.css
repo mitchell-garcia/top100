@@ -1,0 +1,161 @@
+
+.album-details {
+    display:block;
+    background:#fff;
+    top:0;
+    position:absolute;
+    z-index:1;
+    height: 100%;
+    width:100%;
+    padding:20px 35px;
+    overflow: scroll;
+}
+  
+.album-details-left {
+    animation: slideLeft .35s ease;
+    left:100%;
+}
+  
+.album-details-right {
+    animation: slideRight .35s ease;
+    right:100%;
+}
+  
+@keyframes slideLeft {
+    0% {
+      left: 5%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+  
+@keyframes slideRight {
+    0% {
+      right: 5%;
+    }
+    100% {
+      right: 100%;
+    }
+}
+  
+.album-details-info-block {
+    padding:5px 0 15px 0;
+}
+  
+.album-details-header {
+    margin:0 0 5px 0;
+    font-size: 14px;
+    color:#777;
+    /* color:desaturate($brand-blue, 35%); */
+    font-weight:100;
+}
+  
+.album-details-info-content {
+    line-height:1.3;
+    color:#333;
+    font-weight: normal;
+}
+  
+.album-details-footer-copyright {
+    font-size:14px;
+    margin-top:30px;
+    font-weight: normal;
+    font-family: lft-etica-compressed;
+    color: #999;
+}
+  
+.pure-button {
+    display: inline-block;
+    *display: inline; /*IE 6/7*/
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.pure-button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+  
+.pure-button {
+    font-family: inherit;
+    font-size: 100%;
+    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 0.5em 1em;
+    color: #444; /* rgba not supported (IE 8) */
+    color: rgba(0, 0, 0, 0.80); /* rgba supported */
+    *color: #444; /* IE 6 & 7 */
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+    /* Transitions */
+    -webkit-transition: 0.1s linear -webkit-box-shadow;
+    -moz-transition: 0.1s linear -moz-box-shadow;
+    -ms-transition: 0.1s linear box-shadow;
+    -o-transition: 0.1s linear box-shadow;
+    transition: 0.1s linear box-shadow;
+}
+  
+.pure-button-hover,
+.pure-button:hover,
+.pure-button:focus {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
+    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+
+.pure-button:focus {
+    outline: 0;
+}
+
+.pure-button-active,
+.pure-button:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+  
+  /* Firefox: Get rid of the inner focus border */
+.pure-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+
+.album-details-info-price .album-details-info-content {
+    font-size:20px;
+    color: #25a25a;
+    font-weight: bold;
+}
+  
+.album-details-left .album-details-click-to-hide {
+    position:absolute;
+    top:20px;
+    right:20px;
+    font-weight:bold;
+    font-size:14px;
+    color:#999;
+    cursor: pointer;
+}
+  
+.album-details-right .album-details-click-to-hide {
+    position:absolute;
+    top:20px;
+    left:20px;
+    font-weight:bold;
+    font-size:14px;
+    color:#999;
+    cursor: pointer;
+}

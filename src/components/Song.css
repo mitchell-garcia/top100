@@ -1,0 +1,91 @@
+
+.song {
+padding:45px;
+width:100%;
+float:left;
+transition: 150ms ease all;
+position:relative;
+border-radius: 3px;
+}
+
+.song:nth-child(even) {
+background: rgba(255,255,255,.5);
+
+}
+.song-number {
+  font-size:24px;
+  font-weight:bold;
+  background:red;
+  color:#fff;
+  font-size:18px;
+  width:35px;
+  border-radius:9999px;
+  text-align: center;
+  height:35px;
+  line-height:35px;
+  float:left;
+  position:absolute;
+  top:30px;
+  left:30px;
+}
+
+.song-thumbnail-container {
+  width:15%;
+  padding-bottom:15%;
+  float:left;
+  border-radius:3px;
+  overflow: hidden;
+}
+
+.song-information-container {
+  max-width:80%;
+  margin-top:25px;
+  margin-left:25px;
+  float:left;
+}
+
+.song-name {
+  font-size:18px;
+  display:block;
+  font-weight: bold;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.song-artist {
+  font-size:16px;
+  display:block;
+  margin-top:5px;
+  color:#666;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.song.song-list {
+  padding:20px;
+}
+
+.song.song-list .song-number {
+  float:left;
+  position: relative;
+  width:25px;
+  height: 25px;
+  color:#000;
+  background:transparent;
+  line-height: 25px;
+  top:auto;
+  left:auto;
+}
+
+.song.song-list .song-thumbnail-container {
+  display:none;
+}
+
+.song.song-list .song-information-container {
+  max-width:85%;
+  margin-top:1px;
+  margin-left:15px;
+}
